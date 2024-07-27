@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taxk3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        form{
+            background-color: rgb(212, 200, 200);
+            padding: 15px;;
+        }
+        input[type=text],select,input[type=submit]{
+            width:100%;
+            padding: 12px;
+            border-radius: 5px;
+            background-color:beige;
+            p
+        }
+        input[type=submit]:hover{
+            background-color: rgb(61, 216, 61);
+        }
+        input[type=submit]{
+            background-color: aqua;
+        }
+        label{
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text"name="name"placeholder="your name"><br><br>
+        <label for="surname">Surname</label>
+        <input type="text"name="surname"placeholder="your surname"><br><br>
+        <label for="country">Country</label>
+        <select>
+            <option>india</option>
+            <option>pak</option>
+            <option>usa</option>
+        </select><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
