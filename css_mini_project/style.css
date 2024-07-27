@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0.5rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+nav{
+    border: 2px solid black;
+    max-width: 600px;
+    margin:0 auto 2rem;
+    line-height: 6rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+}
+h2{
+    background-color: yellow;
+    font-size: 2rem;
+    border-radius: 3rem 3rem 0 0;
+    padding: 1rem;
+    
+}
+li{
+    list-style-type: none;
+    border-top: 2px solid black;
+    text-decoration: nones;
+}
+li a ,li a:visited{
+    display: block;
+    color: black;
+}
+li a:hover ,li a:focus{
+    background-color: blue;
+    color:white;  
+}
+li:last-child a{
+    border-radius: 0 0 3rem 3rem ;  
+}
