@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <h3>Exercise 3: Add a New Element</h3>
+    <div class="container">
+
+    </div>
+    <script>
+        //create new parigraph
+        let newele = document.createElement("p");
+        let text = document.createTextNode("This is my para");
+        newele.appendChild(text);
+        console.log(newele)
+        let main = document.querySelector(".container");
+        main.appendChild(newele);
+    </script>
+</body>
+</html>
