@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find reminder</title>
+</head>
+<body>
+    <script>
+        document.write("<h3> :-find reminder if two number"+"<br>")
+            function reminder(num1,num2){
+                return num1 % num2;
+            }
+            let result = reminder(36,5)
+            document.write(result+"<br>");
+
+            //-----------expresion function------------------
+            var reminder=function rem(number,number2){
+                return number % number2;
+            }
+            let answer=reminder(36,5)
+            document.write(answer+"<br>")
+
+            //------------anonymos function----------------------
+            var remind=function(val1,val2){
+                return val1%val2;
+            }
+            let remider=remind(40,6)
+            document.write(remider)
+
+            //-------------arrow function-----------------------
+            
+    </script>
+</body>
+</html>

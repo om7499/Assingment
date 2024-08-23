@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meter into milimeter</title>
+</head>
+<body>
+    <h3>
+        const hours = Math.floor(seconds / 3600)<br>
+        const minutes = Math.floor((seconds % 3600) / 60)<br>
+        const remainingSeconds = seconds % 60<br>
+    </h3>
+    <script>
+        document.write("<h3>Convert the given seconds into hours.</h3>");
+        const convertSeconds = (seconds) => {
+        const hours = Math.floor(seconds / 3600)
+        const minutes = Math.floor((seconds % 3600) / 60)
+        const remainingSeconds = seconds % 60
+        return `${hours} hours : ${minutes} minutes : ${remainingSeconds} Seconds`
+        }
+ 
+          const result = convertSeconds(5000)
+
+         document.write(result) // 1 hours : 3 minutes 40 Seconds
+
+         //normal function---------------------------------------
+        //  function timetaken(seconds){
+        //     const hour=(math.floor(seconds/3600));
+        //     const minute=math.floor((seconds % 3600)/60);
+        //     const second=math.floor(seconds%60);
+        //     return `${hour}hours:${minute}minutes : ${second}seconds`
+        //   }
+        //   timetaken(60)
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print 10 to 100 even</title>
+</head>
+<body>
+    <script>
+       document.write("<h3>:-print number 10 to 100 number must be even"+"<br>")
+         function evennum(){
+            for(let i=10 ; i<=100 ; i++){
+                if(i % 2 == 0){
+                    document.write(i +"<br>")
+                }
+            }
+         }
+         evennum()
+
+         //-----------expresion function---------------------------
+         var even= function evennum1(){
+            for(let i=10 ; i<=100 ; i++){
+                if(i % 2 == 0){
+                    console.log(i)
+                }
+            }
+         }
+         even()
+
+         //--------------anonymos function--------------------
+         var printeven=function (){
+            for(let i=10 ; i<=100 ; i++){
+                if(i % 2 == 0){
+                    document.write(i+" ")
+                }
+            }
+         }
+         printeven()
+
+         //------------arrow function---------------------------
+         let evennum4 = () =>{
+            for(let i=10 ; i<=100;i++){
+                if(i%2==0){
+                   console.log(i)
+                }
+            }
+         }
+         evennum4()
+
+         //--------------IIFE-------------------------------
+        //  (
+        //     function even5(){
+        //         for(let i=10 ; i<=100;i++){
+        //         if(i%2==0){
+        //            document.write(i)
+        //         }
+        //         }
+        //     }
+        //  )
+    </script>
+</body>
+</html>

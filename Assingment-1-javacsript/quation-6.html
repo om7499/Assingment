@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert second into hours</title>
+</head>
+<body>
+    <h3>
+       
+    </h3>
+    <script>
+        document.write("<h3>:-check the given number is even or odd</h3>")
+       // normal function-------------------------------------
+        function evenodd(value){
+             if(value%2==0)
+             {
+                document.write("value is even"+"<br>");
+             }
+             else{
+                document.write("value is odd"+"<br>");
+             }
+            }evenodd(7)
+
+        //----------------expression function--------------------------
+        var eveodd = function odd(value){
+            if( value %2 == 0 ){
+                console.log("value is even"); 
+            }
+            else{
+                console.log("value is odd")
+            }
+        }
+        eveodd(8)
+
+        //------anonymos function-------------------------------
+
+        var result = function(value){
+              if(value % 2 == 0){
+                document.write("value is even"+"<br>");
+              }else{
+                document.write("value is even"+"<br>");
+              }
+        }
+        result(9)
+         
+        //-------------arrow function--------------------------
+        var demo=(value)=>{
+               if( value % 2 == 0){
+                document.write("value is even"+"<br>");
+               }else{
+                document.write("valuei is odd"+"<br>");
+               }  
+        }
+        demo(5)
+        
+        //--------------IIFE---------------------------------------
+        (
+            function find(value){
+                if(value%2==0){
+                    document.write("value is even");
+                }else{
+                    document.write("value is odd");
+                }
+            }
+        )(8)
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quation-3</title>
+</head>
+<body>
+    <!-- formula - const average = sum / numbers-->
+    <script>
+        document.write("<h3>:-find the avrage of given five number</h3>")
+        function avrage(numbers){
+            let sum = 0;
+            for(let i=0; i<numbers.length; i++){
+                sum += numbers[i];
+            }
+            const avg = sum/numbers.length;
+            return avg;  //avg value is return into function
+            
+        }
+        document.write(avrage([1,2,3,4,5]));
+        
+    </script>
+</body>
+</html>

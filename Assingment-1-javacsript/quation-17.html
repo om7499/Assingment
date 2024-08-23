@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        document.write("<h3> :- Check given character is space or not?"+"<br>")
+            function checkspace(value){
+                return value.indexOf(' ') >= 0; //indexOf is a function to find space between string
+            }
+            var whitespace = checkspace("my name is om");
+            if(whitespace == true){
+                console.log("the string has white space")
+            }
+            else(
+                console.log("The string has noyt white space")
+            )
+
+            //--------------expresion function---------------------------
+            function spacecheck(value){
+                return value.indexOf(' ')>=0;
+            }
+            var space = spacecheck("mynameisOM");
+            if(space == true){
+                document.write("string having a space"+"<br>");
+            }
+            else{
+                document.write("string not having a space"+"<br>");
+            }
+            
+            //----------anonymos function-----------------------------------
+          var space=  function(value){
+                return value.indexOf(' ') >= 0
+            }
+            let check = ("my name is om")
+            if(check == true){
+                document.write("having a space"+"<br>")
+            }
+            else{
+                document.write("not having a space"+"<br>")
+            }
+
+            //---------------arrow function------------------------
+            var chekit=(value)=>{
+                return value.indexOf( '') >= 0
+            }
+            let spaces=("my name is om")
+            if(spaces == true){
+                document.write("it is having a space")
+            }
+            else{
+                document.write("it is not having a space")
+            }
+
+            //-----------IIFE-----------------------------
+            // (
+            //     function call(value){
+            //         return value.indexOf(' ') >= 0
+            //     }
+            // )()
+            // let space3=call("MyNameIsOm")
+            // if(space3 == true){
+            //     document.write("it is having space")
+            // }
+            // else{
+            //     document.write("not having space");
+            // }
+    </script>
+</body>
+</html>

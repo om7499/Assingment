@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divisibel by 5</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>:-check the given number is divisible by 5 or not"+"<br>");
+            // function compare(val){
+            //     if(val % 5 == 0){
+            //         document.write("given number is divisible by 5"+"<br>")
+            //     }
+            //     else{
+            //         document.write("given number is not divisible by 5"+"<br>")
+            //     }
+            // }
+            // compare(13)
+
+            //------expresion function-----------------------
+            let check= function find(num){
+                if(num % 5==0){
+                    console.log("number is divisible by 5")
+                }
+                else{
+                    console.log("not divisible by 5")
+                }
+            } 
+            check(20)
+
+            //---------------------anonymos function--------------------
+            var show=function(val){
+                if(val %5==0){
+                    document.write("number is divisible 5"+"<br>")
+                }else{
+                    document.write("number is not divisible 5"+"<br>")
+                }
+            }
+            show(10)
+
+            //--------------arrow function--------------------------------
+            let bigshow=(num)=>{
+                if(num % 5 == 0 ){
+                    document.write("divisible by 5")
+                }else(
+                    document.write("not divisible by 5")
+                )
+            }
+            bigshow(45)
+    </script>
+</body>
+</html>

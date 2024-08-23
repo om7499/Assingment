@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple interest</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>:-find the simple intrest<h3>");
+            function simpleint(){
+                var p = 10000 ; //principle value
+                var r = 0.05 ; //rate of intereat
+                var t = 2 ;    //time i yers
+
+                var interest =( p * r * t )/100 ;
+                document.write("simple intrest is :"+interest)
+            }
+            simpleint()
+
+            //-------using Arrow function-----------------------------
+
+            var simpleintrest=(principle,rate,time)=>{
+            //   var principle = 20000;
+            //   var rate = 2 ;
+            //   var time = 5 ;
+
+              var intrest1=(principle * rate * time)/100 ;
+              return intrest1;
+            }
+             var x = simpleintrest(20000,2,5)
+             document.write(x)
+    </script>
+</body>
+</html>

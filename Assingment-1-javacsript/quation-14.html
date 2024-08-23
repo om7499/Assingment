@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leap year or not</title>
+</head>
+<body>
+    <script>
+        document.write("<h3> check leap year or not"+"<br>")
+            //------find leap year------------------------
+            // function leap(year){
+            //     if(year % 4 == 0 ){
+            //         document.write("year is leap"+"<br>")
+            //     }
+            //     else{
+            //         document.write("year is not leap"+"<br>")
+            //     }
+            // }
+            // leap(2015)
+       
+            //-------------diffrent method-------------------
+            const year= prompt("enter year")
+            function checkleapyear(){
+                const leap = new Date(year,1,29).getDate() === 29;
+                if(leap){
+                    document.write(year +" year is leap"+"<br>");
+                }
+                else{
+                    document.write(year +" year is not leap"+"<br>")
+                }
+            }
+            checkleapyear()
+
+            //---------------expression function---------------------
+            const year1 = prompt("enter year")
+            var find=function leapyear(){
+                const leap = new Date(year1,1,29).getDate() === 29;
+                if(leap){
+                    document.write(year1+"year is leap"+"<br>")
+                }else{
+                    document.write(year1+"year is not leap"+"<br>")
+                }
+            }
+            find()
+
+            //---------------------anonymos function--------------------
+            var checkyear = function(year2){
+                const leap=new Date(year2,1,29).getDate() === 29;
+                if(leap){
+                    document.write("year is leap"+"<br>");
+                }else{
+                    document.write("year  is not leap"+"<br>")
+                }
+            }
+            checkyear(2003)
+
+            //---------------arrow function-----------------------------
+            var favyear=(year3)=>{
+                const leap = new Date(year3,1,29).getDate() === 29;
+                if(leap){
+                   document.write("year is leap");
+                } 
+                else{
+                 document.write("year is not leap");
+                }
+            }
+            favyear(2003)
+
+            //-----------IIFE---------------------------------
+            //
+            //
+            //
+            //
+    </script>
+</body>
+</html>

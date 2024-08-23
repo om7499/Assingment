@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>possitiv or negative</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>:-check the given number is possitiv or negative"+"<br>")
+            function posneg(number){
+                if(number < 0){
+                    document.write("number is negative"+"<br>");
+                }else{
+                    document.write("number is possitive"+"<br>")
+                }
+            }posneg(-9)
+
+            //------------expresion function----------------------
+            let check = function pn(num){
+                if(num > 0){
+                    document.write("number is positive"+"<br>")
+                }
+                else{
+                    document.write("number is negative"+"<br>");
+                }
+            }
+            check(7)
+
+            //---------anonymos function-------------------------
+            let find=function negativ(num){
+                if(num > 0){
+                    console.log("number is positive");
+                }else{
+                    console.log("number is negative");
+                }
+            }
+            find(-1)
+
+            //-----------arrow function--------------------------------
+            let solve=(num)=>{
+                if(num > 0){
+                    document.write("number is positive");
+                }else{
+                    document.write("number is negative");
+                }
+            }
+            solve(-8)
+
+    </script>
+</body>
+</html>

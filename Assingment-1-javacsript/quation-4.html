@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of trangle</title>
+</head>
+<body>
+    <!-- Genral formula : 1/2(base*height); -->
+    <script>
+     let h =10;
+     let b =20;
+     let area = (b*h)/2;
+     document.write("area of triangle is :"+area)
+     
+     //narmal function--------------------
+     function findarea(){
+        let h=40;
+        let b = 30;
+        area=(b*h)/2;
+        document.write("area is a:"+area)
+     }
+     findarea()
+
+     //anonymos function-------------------
+  let farea= function(){
+        let h=3;
+        let b=4;
+        a=(b*h)/2
+        document.write("area is :"+a+"<br>")
+     }
+     farea()
+     //expressin function---------------------
+    let ariais= function ofthe(h,b){
+        document.write("area is:"((b*h)/2))
+     }
+     ariais(30,20)
+
+     //arrow function--------------------------
+    //  let ariaf=()=>{
+    //     let base=20,height=10,a;
+    //       a=(base*height)/2
+    //     document.write("area is the :"+a);
+    //  }
+    //  ariaf()
+
+     //IIFE--------------------------------------------
+     (
+        function myname(h,b){
+            document.write("area of triangle is :"+(b*h)/2)
+        }
+     )(7,7)
+    </script>
+</body>
+</html>

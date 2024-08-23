@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check vovels or not</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>:- check the characters are vovels orr not"+"<br>");
+            // function checkvovel(char1){
+            //     if(char1 == 'a' || char1 == 'e' || char1 == 'i' || char1 == 'o' || char1 == 'u' ){
+            //         console.log("it is vovel");
+            //     }
+            //     else{
+            //         console.log("it is simple character ")
+            //     }
+            // }
+            // checkvovel('p')
+
+            //------------expresion function--------------------
+        
+        //   var fill =  function checkvovel(char1){
+        //         if(char1 == 'a' || char1 == 'e' || char1 == 'i' || char1 == 'o' || char1 == 'u' ){
+        //             document.write("it is vovel"+"<br>");
+        //         }
+        //         else{
+        //             document.write("it is simple character "+"<br>")
+        //         }
+        //     }
+        //     fill('p')
+
+            //-----------anonymos function--------------------------
+            // var charcheck= function(c){
+            //       if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
+            //         document.write("vovel"+"<br>")
+            //       }
+            //       else{
+            //         document.write("character"+"<br>");
+            //       }
+            // }
+            // charcheck('k')
+
+            //---------------arrow function--------------------------------
+            // let checkvo =(ch)=>{
+            //     if(ch == 'a'|| ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            //     {
+            //         document.write("is a vovel")
+            //     } 
+            //     else{
+            //         document.write("is a character")
+            //     }
+            // }
+            // checkvo('d')
+
+            //-----------------IIFE------------------------------------------
+           
+            (
+                function vovels(ch){
+
+                    
+                     if(ch == 'a'|| ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                     {
+                        document.write("it is a vovel")
+                     }
+                     else{
+                        document.write("it is character");
+                     }
+                }
+            )('a');
+    </script>
+</body>
+</html>

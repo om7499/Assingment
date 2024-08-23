@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aria of circle</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>find the area of cricle</h3>");
+        let r=16,a;
+        document.write("area of circle is:"+3.14*(r*r)+"<br>");
+
+        //uer input--------------------
+        // let radius=prompt("enter radius of circle");
+        // alert("area of circle :"+(3.14*(radius*radius)));
+
+        //-normal function----------------------------
+        function circle(r)
+        {
+            document.write("area of circle is---:"+(3.14*(r*r))+"<br>");
+        }
+        circle(13)
+
+        //expression function--------------------------------
+        let circle1= function myredi(r){
+              document.write("area of circle is :"+(3.14*(r*r)));
+        }
+        circle1(10)
+
+        //anonymos function-------------------------------------
+        var cir =function(r){
+            document.write("area of circle is :"+(3.14*(r*r))+"<br>");
+        }
+        cir(r)
+
+        //arrow function-------------------------------------------
+        let circ=(r)=>{
+            document.write("area of circle is arrow fun :"+(3.14*(r*r)))
+        }
+        circ(13)
+
+        //IIFE--------------------------------------------------------
+    
+        (
+             function demo(radi){
+             document.write("area of circle is arrow fun :"+(3.14*(radi*radi)))
+            }
+        )(15)
+        
+    </script>
+</body>
+</html>

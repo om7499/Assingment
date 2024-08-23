@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meter conver cm</title>
+</head>
+<body>
+
+   <h2>length converter</h2>
+   <p>type of value i meter field to convert the cm</p>
+   <p>
+    <label for="">meter</label><!--oninput attr is use for print a input //
+                                onchange attri is use for print a conver value-->
+    <input type="number"placeholder="meter"oninput="LengthConverter(this.value)"onchange="LengthConverter(this.value)">
+   </p>
+
+   <p>cm:<span id="outputcm"></span></p>
+
+    <script>
+       //call this function into a input
+        function LengthConverter(number){
+            document.getElementById("outputcm").innerHTML=number/0.01;
+        }
+    </script>
+</body>
+</html>
