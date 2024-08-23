@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle button for  dark and light</title>
+    <style>
+        button{
+           padding: 10px;
+           margin: 10px;
+           background-color: green;
+           color:white;
+           border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="mode">Change mode</button>
+
+    <script>
+        let modebtn = document.getElementById("mode");
+        // console.log(modebtn)
+        let current="light"
+       
+        modebtn.addEventListener("click",() =>{
+            if(current=== "light"){//condition is true value is dark
+                current="bark"
+                document.querySelector("body").style.background="black";
+           
+        }
+        else{ //conditon is false vlue light
+             current="light" 
+             document.querySelector("body").style.background="white";
+        }
+        console.log(current)
+        })
+    </script>
+</body>
+</html>
