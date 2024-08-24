@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for_Each_loop</title>
+</head>
+<body>
+    
+    <script>
+        // for each loop is use to get data from Js array or Object
+        //the method calles an array in order
+        // syntax
+        //var cars = ["car1","car2","car3"];
+        //cars.forEach(myfunction);
+
+        //function myfunction(item,index,array){
+            //body of function
+       // }
+        // item - (here "car1")requred parameter
+        // index - (here 0 for "car1")optional
+        // array - (here cars)optional
+
+        var cars = ["car1","car2","car3","car4","car5","car6"];
+        cars.forEach(car);
+        function car(item){
+            document.write(item + "<br>");
+             // only print item in this array
+        }
+        
+        //------------------------------------------------------------------
+
+        var cars1 = ["car1","car2","car3","car4","car5","car6"]
+        cars1.forEach(car1);
+        function car1(item ,index){
+            document.write(item +"=>"+index+ "<br>");
+             // only print item and index in this array
+        }
+        
+
+        //----------------------------------------------------------------------
+
+        var cars2 = ["car1","car2","car3","car4","car5","car6"]
+        cars2.forEach(car2);
+        function car2(item ,index,array){
+                array[index] = item+"1"
+                //we can concatenate any item with there
+        }
+
+        cars2.forEach(after);
+        function after(item,index){
+           document.write(index+"=>" + item + "<br>")
+        }
+
+
+    </script>
+</body>
+</html>

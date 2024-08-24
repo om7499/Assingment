@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+    <p id="myElement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, sequi?</p>
+    <script>
+        // 2. How do you create an object in JavaScript?
+        //-------------object Litralas---------------------------------
+        const person = {
+            name:"om",
+            age:22,
+            work :"enginweer"
+        }
+        console.log(person.name)// dot notation
+        console.log(person["age"])
+        
+        //---------------Using new object----------------------------
+        const car = new Object();
+        car.brand = "toyota";
+        car.model = "carmy";
+        car.year = 2020;
+        console.log(car["model"])
+        car.year = "2021"
+        console.log(car.year)
+
+       //How do you add or delete properties in an object?
+       
+       person.name = "sumit";//adding property
+       console.log(person.name)
+
+       delete person.name;
+       console.log(person.name)
+
+        //The this keyword refers to the object that is currently executing the method.
+        // It allows access to other properties and methods of the same object.
+        const person1 ={
+            name: "jay",
+            age : 20,
+            greet:function(){
+                console.log(`hello my name is ${this.name}`);
+            }
+        }
+        person1.greet();
+  
+
+        //What is the difference between 
+        //Object.keys(), Object.values(), and Object.entries()?
+         
+
+        const person2 = {
+            name: "laksh",
+            age:30
+        }
+        //--------------Object.keys()-----------------------------
+        // Returns an array of the object's own enumerable property names (keys).
+
+        console.log(Object.keys(person2));
+
+        //---------------Object.values()---------------------------
+        //  Returns an array of the object's own enumerable property values.
+
+        console.log(Object.values(person2));
+
+        //-----------------Object.entries()------------------------------
+        //Returns an array of the object's own enumerable property [key, value] pairs.
+
+        console.log(Object.entries(person2))
+
+        //How do you check if an object has a property?
+        //-----------------Using in operator:------------------------------
+        const person3 ={
+            name:"shri",
+            age : 10,
+            add : "shirajgaon"
+        }
+        console.log("name" in person3);
+
+        //----------------using hasOwnProperty()----------------------------
+
+        console.log(person3.hasOwnProperty("age"));
+
+        //  What is prototype chaining in JavaScript objects?
+
+        function animal(name){
+            this.name = name;
+        }
+
+        animal.prototype.sayhello = function(){
+            console.log("hello i am "+this.name);
+        }
+        const dog = new animal("tommy");
+        dog.sayhello();
+
+        //What are getters and setters in JavaScript objects?
+        const person4 = {
+            firstname: "jay",
+            lastname : "Behare",
+
+            get fullname(){
+                return `${this.firaname} ${this.lastname}`;
+            },
+            set fullname(name) {
+                [this.firstname , this.lastname] = name.split(" ");
+            }
+        }
+        console.log(person4);//jay Behare
+        person4.fullname = "shri Behare";
+        console.log(person4.firstname); //shri
+        console.log(person4.lastname)//behare
+    </script>
+</body>
+</html>

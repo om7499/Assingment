@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>:-we are study about return keyword<h3>");
+            function fullname(fname,lname){
+                var a = 'hello ' + fname + '-' + lname + "<br>"
+                return a;  //return value is return into a parameter
+            };
+            var b = fullname("om","behare")  //we can create variable b for save the output of functions
+            document.write("full name is :"+b);
+
+            //=======================================================
+
+            // function findpecent(hindi,marathi,math,science,eng){
+            //     var a=hindi+marathi+math+science+eng;
+            //      return a ;
+            // }
+            // var b=findpecent(50,40,60,35,70);
+            // document.write("The obtain mark is :"+b+"<br>");
+
+            // function persent(tm){
+            //     var c=tm/500*100;
+            //     return c;
+            // } 
+            // var d=persent(b)
+            // document.write("percentage is :"+d+"<br>")
+
+            //------------------------arrow function-------------
+
+        //     var mark=(eng, mar,hindi,math,sci)=>{
+        //         var a = eng+mar+hindi+math+sci;
+        //         return a;
+        //     }
+        //    var t= mark(55,56,48,59,90)
+        //    document.write("total mark is :"+b+"<br>")
+
+        //    var percent=(tm)=>{
+        //     var x=tm/500*100;
+        //     return x
+        //    }
+        //   var k= percent(t)
+        //   document.write("total percent is :"+k)
+
+       
+
+
+        function mark(year){
+            if(year % 4 == 0){
+                document.write(year+"year is leap ")
+            }
+            else{
+                document.write("year is not leap")
+            }
+        }
+        mark(2012)
+
+        
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+      //--------------Object---------------------------
+      //javascript is a objectabse language or objects
+      //object : key : value : keys
+      //{}
+      // cons value in object and array we can change
+      let obj={}
+      console.log(obj);
+      console.log(typeof(obj));
+
+//------------------------------------------------------------
+
+      let person = {
+        name :"om",
+        age : 22,
+        add : "shirajgaon"
+      }
+      console.log(person);
+      console.log(person.name) //first way --> dot notation
+      console.log(person["name"])// 2nd way --> array notation
+      console.log(person.age);
+      console.log(`lastnme`in person) //we can check the value in true or false
+      delete person.age;
+      console.log(person.age)
+
+      person.name ="jay";//we can chnge inside the object value
+      console.log(person.name)
+
+//--------------------------------------------------------------------------
+
+      let animal={
+        name:"lion",
+        age :30,
+        dispalay:function(){
+            console.log(this.name+" "+this.age)// this is use for in this object
+        }
+      }
+      console.log(animal)
+      console.log(animal.name+" "+animal.age)
+      animal.dispalay()
+      animal["dispalay"]()
+
+      let student={
+        name:"sumit",
+        age :22,
+        add : "shirajgaon",
+        marks:{
+            marathi:70,
+            hindi : 75,
+            english :60
+        }
+      }
+      console.log(student)
+      console.log(student.marks.marathi)
+
+      //--------------set and map -------------------------------
+      //--------------Set------------------------
+      // this is colection of uniqe value 
+      // do not find index value into a set
+
+      let res = new Set()
+      res.add("welcome")
+      res.add("world")
+      res.add("to");
+      res.add("sleeping")
+      res.add("world");
+      res.add("here")
+      res.add("world");
+
+      res.delete("world");
+      //res.clear()
+      console.log(res.size)// doplicate value are not allowed
+
+    //   for(let sleep of res)
+    //   {
+    //     console.log(sleep)
+    //   }
+        res.forEach((item)=>{
+          console.log(item)
+        })
+     
+    //---------------array convert in set -------------------------
+     let arr = [1,2,3,45,2,2,6,7,8];
+     console.log(arr);
+     let arr1 = new Set(arr);
+     console.log(arr1)
+    
+    //------------------set convert into array----------------------
+     let data = new Set([2,4,5,6,1])
+     console.log(data)
+     data = [...data]
+     console.log(data)
+
+    
+    //---------passing obljects to set--------------------------------
+     let fname= {name:"om",};
+     let lname = {lname:"Behare"};
+     let add ={add:"maharatra"}
+    
+     let finalresult = new Set();
+     // we can pass object iside the set
+     finalresult.add(fname)
+     finalresult.add(lname)
+     finalresult.add(add)
+
+     console.log(finalresult)
+     for(let names of finalresult)
+     {
+        console.log(names.name)
+     }
+     
+     // we can pass array inside the set
+     let final = new Set(["om","shrikrushna","behare" ]);
+     console.log(final)
+     for(let arr of final)
+     {
+        console.log(arr)
+     }
+    
+
+
+     //---------------map -> key and value -------------------------
+     //map is similar to the object but litel bit advance from object
+     //map key can be any data type but (object can have string key only)
+     //map has more feature which dont have in object
+     //map have better peformance than object
+     // methods -> get,set,has,size
+     let mobj = new Map();
+
+      mobj.set("1","om"); // key as astring
+      mobj.set(2,"Behare"); // key as a num
+      mobj.set(true,"boolean") // key as bool
+      mobj.set({},"this is a object");
+      mobj.set(()=>{},"this is a arrow functin type")
+      console.log(mobj)
+      console.log(mobj.get(2));
+      console.log(mobj.get("1"));
+      console.log(mobj.get(true))
+      mobj.delete(true)//deleting
+      console.log(mobj.get(true)) //gettinge sme obj
+
+      //-------------Array object passing to map-------------------------
+      let myval = new Map(
+        [
+            ["1","wecome"],
+            ["2","to"],
+            ["3","sleeping"],
+            ["4","world"]
+        ]
+      )
+      console.log(myval)
+      //we can use keys method only print the keys
+      for(vals of myval.keys())
+      {
+        console.log(vals)
+      }
+
+      //we can use values method for only print value
+      for(let val of myval.values())
+      {
+        console.log(val)
+      }
+
+      //-------------------Object Constructor function--------------------
+      //Sometimes we need to create many objects of the same type.
+      //To Create an object type we use an object Constructor function
+      //first letter (fun cons) with an Upper-case
+      
+      function Student(first,last,age,gender)
+      {
+        this.firstName = first,
+        this.lastName = last,
+        this.age = age,
+        this.gender = gender
+      }
+      const student1 = new Student("om","Behare",22,"male");
+      const student2 = new Student("Amit","Umap",21,"male");
+      const student3 = new Student("sumit","umap",22,"male");
+      
+      student1.nationality = "Indian"; //simple way to add property
+      console.log(student1)
+      console.log(student2)
+
+      //--------------create method----------------------------
+      //  student1.name = function(){
+      //   return this.firstName +" "+this.lastName;
+      //  }
+      //  console.log(student1.name())
+
+       //---------we can add use of prototype------------------
+       // when we have need to add property into a constructor
+       // function then we use prototype
+       Student.prototype.marks="80%";
+       console.log(student1);
+       console.log(student1.marks);
+       
+       Student.prototype.name = function(){
+        return this.firstName +" "+this.lastName;
+       }
+       console.log(student1.name())
+     </script>
+</body>
+</html>

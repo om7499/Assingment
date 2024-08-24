@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //String is a sequence of character used to represent text 
+         // create string 
+         let str = "Apana Collage";
+         console.log( " normal string : ",str) 
+         console.log(str.length)
+         console.log(str[0],str[1],str[2])
+        
+          //template Literals                             IMP
+         //to create a string by doiing substitution of placeholder
+         //stringText ${expression}stringtext
+         let specialString = `this is a templet litral`
+         console.log(" type is the : ",typeof specialString)
+
+         let obj ={
+            item :"pen",
+            price:10,
+         }
+        let output = `The cost of ${obj.item} is ${obj.price} rupees` ;
+        console.log( "object value  as a string : ",output);
+        
+
+        //--------------Strings Methodes------------------------
+        // strings are immutable
+        let str1 = "ombehare"
+        let newstr =str1.toUpperCase()
+        let newstr1 = str1.toLowerCase()
+        console.log( "Normal string : ",str1); // do not change inot orignal string
+        console.log("Uppercase String : ",newstr);// it can create new string
+        console.log("lowercase String : ",newstr1)
+
+        //---------------trim() method--> it is remove the space
+        //---------------trimStart() ----> it is remove start space
+        //---------------trimEnd() ------->it is remove space from end
+
+        var val = "   i am boy    ";
+       var ntrim =  val.trim()
+        console.log("Remove the space between : ",ntrim)
+
+        //--------------slice() method--------------it is return a extract part
+        //-------------substring(start, end)  ----> it is not access negative value
+        // -------------substr(start, length) -----> 2nd parameter extract length
+        //-----val.slice(strval,end)
+        let mystr = "1234567"
+        let store = mystr.slice(2,5)
+        console.log("slice part is : ",store)
+
+        //--------------concat() method-----------------------
+        //----val.concat(val2)-
+        let st1 = "apana"
+        let st2 = "collage"
+        let merge = st1.concat(st2)
+        console.log("str1 + str2 = ",merge)
+
+        //----------------replace() method----------------------
+        //To replace case insensitive, /i flag (insensitive):
+        ///g flag (global match):
+        //----str.replace("val","new")--replaceAll also use
+        let value = "hello"
+        console.log("replace value is = ",value.replace("hello","olleh"))
+
+        //-------------charAt(idx)----------------------
+        //------------The at(position) Method
+        // -----------The charCodeAt(position) Method
+        //------------str.charAt(idx)--
+        //-------------myString.at(-2)
+        let name = "ombehare";
+        console.log("char At no 3 = ",name.charAt(3));
+        // console.log(indexof(name));
+
+        //-------------------split() method:--------------------
+        //  string can be converted to an array with the split() method
+          text.split(",")    // Split on commas
+          text.split(" ")    // Split on spaces
+          text.split("|")    // Split on pipe
+        
+
+        //----------String Search Methods------------------
+        //----------indexof() ---> returns -1 if the string is not found:
+        //---------lastIndexOf()---
+        //--------- search()
+        let text = "Please locate where 'locate' occurs!";
+        let index = text.indexOf("locate");
+        console.log(text.indexof("locate")) //7
+
+        //The search() method cannot take a second start position argument.
+The     //indexOf() method cannot take powerful search values (regular expressions).
+
+
+        //Q1.get input from user and create a email
+        let user = prompt("enter your full name")
+        const email = `@${user}${user.length}`;
+        console.log("the created email is = ",email);
+
+        let str4 = 'hello';
+        str4[0] = 'H'; // This will not change the string, because strings are immutable
+        console.log(str4); // 'hello'
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error handling</title>
+</head>
+<body>
+    <script>
+        console.log("line 1 is executed successfully")
+        try{
+            console.log(welcome);
+        }
+        catch(error){
+            console.log("error :plese enter valid number"+error.message)
+        }
+        finally{
+            console.log("i am a finally block")
+        }
+        console.log("line 1 is executed successfully")
+        console.log("line 1 is executed successfully")
+        console.log("line 1 is executed successfully")
+        
+
+        let x=10;
+        console.log("execution strat");
+        if(x<15){
+            throw Error("x should be greter tha 15")
+            console.log("enter valid number")
+        }
+        console.log("out of block");
+
+
+        localStorage.setItem("movie","kalky")
+         sessionStorage.setItem("name","ombehare")
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array is complex data type
+        //we can store any type of data
+        //representation of arry
+
+        var arr = [];
+        console.log(arr);
+        console.log(typeof(arr))
+        console.log(Array.isArray(arr));
+
+        var arr1="welcome";
+        console.log(Array.isArray(arr1));
+        var res = new Array();//construxtor way
+        console.log(res);
+        console.log(typeof(res))
+        console.log(Array.isArray(res));
+
+        const number=[1,2,3,4,5,6,7,8,9];
+        const name =["om","sumit","ram"];
+        const mix = [1,2,3,"apple","bannaa",true];
+
+        console.log(number)
+
+         console.log("legth is :"+number.length)
+         console.log("index is :")
+
+         console.log(number[0])
+         console.log(number[1])
+         console.log(number[2])
+         console.log(number[2])
+   
+         //iteration DataTransfer
+         //by using loop
+         for(let i=0;i<name.length;i++)
+         {
+            console.log(i)
+         }
+         //using while loop
+         let i=0;
+         while(i<name.length){
+            console.log(i);
+            i++;
+         }
+        //for of loop
+        for(let n of name){
+            console.log(" for of"+name);
+        }
+        //for in 
+        for(let n in name){
+            console.log(name[n])
+        }
+        //for each
+        name.forEach(
+            function(element,index){
+                console.log(`${index},${element}`)
+            }
+        )
+        //inserting element into the array
+        const fruts=["apple","mango","banana","kivi"]
+
+        //unshift()--> biginig of array 
+        name.unshift("shym");
+        console.log(name) 
+        
+       // push()-->ending of array
+       name.push("rohit");
+       console.log(name);
+
+       //shift()---> remove from starting 
+       name.shift();
+
+       //pop()--remove from ending
+       name.pop(1,1);
+       console.log(name)
+
+       //splice() method is remove and add  element into the array
+       name.splice(1,2)// first start , how many delet , add
+       console.log(name);
+
+       //sclice()
+       var res= name.slice(0,1);
+       console.log(res);
+
+
+    </script>
+</body>
+</html>

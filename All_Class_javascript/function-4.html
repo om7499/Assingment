@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+     <h2>Function</h2>
+     <h3>Function is the location where we can write our logic to perform some action</h3>
+     <p>syntax</p>
+    <pre>
+        Keyword : function 
+        name  : function name 
+        Paranthesis : to pass parameters
+        curly baeses:all the statement
+    </pre>
+    <h2>Types of function</h2>
+    <h3>1.Normal function</h3>
+    <h3>2.function expression</h3> <!--we can define as a variable-->
+    <h3>3.Anonymos function</h3>  <!-- we can define as a without function name -->
+    <h3>4.Arrow function  (=>)</h3><!--we can create without function keyword and name-->
+    <h3>5.IIFE(immidiatly invoked function express)</h3><!--it can call itself us of paranthesis()-->
+    <mark>Genrate function</mark>
+<br><br>
+    <h3>var name ;   //declaration</h3>
+    <h3>name="om";   //Assinging</h3>
+    <h3>var name="om";  // initialization or diclaration</h3>
+
+    <p>------------------------------------------------------------------</p>
+      <br>
+
+    <script>
+
+        //normal function with out parameter
+        function sleep(){
+            document.write("welcome to the sleeping world <br>")
+
+        }
+        sleep();
+        //function with parameter
+
+        function addition(a,b) // parameter
+        {
+            document.write(a+b)
+        }
+        // addition(20,43); //argument
+
+
+        //function with a retern type
+
+        function welcome()
+        {
+            return "Good morning ";
+        }
+        // document.write(welcome())
+
+
+        function multi(a,b)
+        {
+            return (a*b)
+        }
+        // document.write(multi(12,12));
+
+
+        //------------------Expression function-----------------------
+
+      var substraction = function sub(a,b)
+        {
+            document.write("substraction is :"+(a-b) +"<br/>")
+        }
+        substraction(29,20);
+
+
+        // ----------------------Anonumus function----------------
+
+        let full = function(firstname,lastname)
+           {
+            let fullname=firstname+lastname;
+            document.write("my name is :"+fullname+"<br>")
+           }
+           full("om","Behare");
+
+           //------------------Arrow function--------------------- 
+           //function dos't have keyword, function name it is know as Arrow function
+
+           let demo=(name)=>  //
+           {
+            document.write("my name is :"+name+"<br>")
+           }
+           demo("om");
+
+
+           //------------------IIFE----------------------
+           //this function  call itself immidiately
+
+           (
+            function call()
+            {
+                document.write("welcome to IIFE function"+"<br>");
+            }
+          ) ();
+
+          //==============scope-------------------------
+           var add="usab"   // global variable its work anywhere
+          function scopes()
+          {
+             let add="usa"    //local variable its work inside function 
+             document.write("country name is :"+add+"<br>")
+          }
+          scopes();
+          document.write("countryn name is "+add)
+    </script>
+</body>
+</html>

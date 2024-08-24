@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <we can set time for run thi program -->
+    <button type="button"onclick="setTimeout(time,4000)">click me</button>
+    <p>wecomem to india time is :<span id="time1"></span></p>
+    <buuto></buuto>
+    <script>
+    //  function time(){
+    //     alert("just wak up")
+    //  }
+
+     //for display the time
+     function showtime(){
+        let d = new Date();
+        document.getElementById("time1").innerHTML= d;
+     }
+     setInterval(showtime,1000)
+       ///
+
+       let clearid;
+       function stopclock(){
+          clearInterval(clearid);
+       }
+
+    
+    </script>
+</body>
+</html>

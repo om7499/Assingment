@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title>
+</head>
+<body>
+    <div id="one">
+         <p>i am parigraph one</p>
+         <p id="last">welcome to dom maipulation</p>
+    </div>
+
+
+    <h1>Modifying HTML</h1>
+    <h3>changing HTML Content using innerHTML :</h3>
+    <h4>  document.getElementById("id").innerHTML = newHTML</h4>
+    <br>
+    <h3>Changing HTML attribute value :</h3>
+    <h4>document.getElementById("myimage").src= "image.jpg";</h4>
+    <h4>document.getElementById("p2").style.color = "blue" ;</h4>
+    <br>
+    <h3>Modifying class in HTML</h3>
+    <h4>element.classList.add("mystyle");</h4>
+    <h4>element.classList.removr("mystyle");</h4>
+    <h4>element.classList.toggle("mystyle")</h4>
+     <img src="practice/car.jpg.jpg" alt=""id="img">
+
+    <script>
+
+     var my = document.getElementById("img").src = "practice/nature.jpg"
+         
+
+
+        // ccriate new element
+      var newele=document.createElement("h3")
+      console.log(newele);
+       //now add some text into newele
+      newele.innerText="i am the head of this page"
+      var curvdiv= document.getElementById("one")
+      //add this complete element into html document
+      curvdiv.appendChild(newele)
+
+     var lastele = document.getElementById("last")
+     //curvdiv.insertBefore(newele,lastele);
+     
+     //using this we can replace last child to new element
+     lastele.replaceChild(newele)
+     lastele.remove()
+
+
+    </script>
+</body>
+</html>

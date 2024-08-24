@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in HtML</title>
+</head>
+<body>
+     <h1>What Is an Event ?</h1>
+     <h3>Event allow you to write Javascript code that react to cietain Example of event include.</h3>
+     <h3>- The user click the mouse button</h3>
+     <h3>- The web page loading</h3>
+     <h3>- A form field being changed</h3>
+     <br>
+     <h2>As of todays, there are 2 ways to handle events in javaScript</h2>
+     <h3>1.by using an event handeler</h3>
+     <h3>2.by adding an event listener</h3>
+      <br><br>
+
+
+
+
+
+
+
+
+
+
+    <p>-------------------------------------------------------------------------</p>
+
+    <p id="one" onmouseover="overme()"onclick="outme()">Welcome to para</p>
+    <button type="button" onclick="alert('yuo got message')">click me</button>
+
+    <a href="#"onclick="alert('yoy login')">login</a>
+
+    <button type="button" onclick="fun()">click</button>
+
+     Enter name : <input type="text"onkeydown="alert('you down')">
+     Enter Pass : <input type="text"onkeyup="alert('yuo up')">
+
+
+
+    <script>
+        function fun(){
+           alert("you can clickesd me")
+        }
+        function overme(){
+            var pp=document.getElementById("one");
+            pp.style.color="white";
+            pp.style.backgroundColor="green"
+        }
+        function outme(){
+            var pp=document.getElementById("one");
+            pp.style.display="none"
+            // pp.style.color="white";
+            // pp.style.backgroundColor="blue"
+            // pp.style.border="1px solid red"
+        }
+
+    </script>
+</body>
+</html>

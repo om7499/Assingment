@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatypes</title>
+</head>
+<body>
+    <P>This all are the datatypes</P>
+    <script>
+        // ---------number datatype-------------------
+        document.write("<h2>::welcome to the Number datatypes :<h2>");
+          var salery=10000;
+             document.write("salery is :"+salery+"<br>");
+             document.write("data type is :"+typeof(salery)+"<br>");
+             
+          var salary=634.54;
+          document.write("salary is :"+salary+"<br>");
+          document.write("data type is : "+typeof(salary)+"<br>");
+
+          alert(12/0);
+        //   alert(-12/0);
+
+        //----------JavaScript Number Methods----------
+        //--------toString() -->method returns a number as a string
+        //--------toExponential() -->number of characters behind the decimal point
+        //---------toFixed()--> specified number of decimals:
+        //        let x = 9.656;
+        //        x.toFixed(0);
+        //        x.toFixed(2);
+        //----------toPrecision() -->written with a specified length:
+        //---------valueOf() --> returns a number as a number.
+        //   let x = 123;
+        //   x.valueOf();
+        //   (123).valueOf();
+        //   (100 + 23).valueOf();
+
+         document.write("<h2>::welcome to String data type :><h2>");
+            var name="bahubali";
+            document.write("name is :"+name+"<br>")
+            document.write("datatype is:"+typeof(name)+"<br>");
+
+            var name1='devasena';
+            document.write("name is :"+name1+"<br>");
+            document.write("data type is :"+typeof('name1')+"<br>");
+
+            var name2=`bahubli`; // back tick is use also var 
+            document.write("name is :"+name2+"<br>");
+            document.write("data type is :"+typeof(`name2`)+"<br>");
+
+
+            var bonus=6554;
+            document.write(`bonus is :${bonus}`);
+
+
+
+            document.write("<h2>::welcome to the boolean data type:<h2>");
+                var isitting=true;
+                document.write("is eating :"+isitting+"<br>");
+                document.write("the data type is:"+typeof(isitting)+"<br>");// boolean
+
+                var sliping=false;
+                document.write("sliping is a true:"+sliping+"<br>");
+                document.write("data type is :"+typeof(sliping)+"<br>");
+
+             /// ---------Reference Dta Type---------------- 
+             document.write("<h2>::Welcome to the Object datatypes:<h2>");
+                var person ={
+                       name:'om',
+                       age : 22,
+                       salary :20000,
+                       address:"mahrastra"
+                }
+                document.write("person detail is :"+person.name+"<br>");
+                document.write("person detail is :"+person['name']+"<br>")  ;//second type of print a object
+                document.write("data type is :"+typeof(person)+"<br>") ;
+
+
+             document.write("<h2>:: Welcome to the Array datatype :<h2>");
+                var fruits=["mango" ,"banana" ,"apple","papaya",90 ,80.4,true  ]   ;
+                document.write("the array is :"+fruits+"<br>");
+                document.write("the data type is :"+typeof(fruits)+"<br>")//java script also evrithing is object
+                                                                          //java script is object base oriented
+               
+
+
+
+
+                // ------------Trival Data Types-------------------                                                          
+            document.write("<h2>::WEcome to the null data type:<h2>");
+                
+                var movie=" "
+                document.write("movie name is "+movie+"<br>");
+                document.write("the data type is :"+typeof(movie)+"<br>");//string data type
+
+                var movie1=""
+                document.write("movie name is :"+movie1+"<br>");
+                document.write("the data type is :"+typeof(movie1)+"<br>");//string data type
+
+                var movie2=null;
+                document.write("movie name is :"+movie2+"<br>");
+                document.write("the data type is :"+typeof(movie2)+"<br>");//object data type
+
+
+             document.write("<h2>:: Wecome to the undifine data type :<h2>");
+                
+                var loc="complex";
+                document.write("location is :"+loc+"<br>");
+                document.write("the dat type is : "+typeof(loc)+"<br>");//string data type
+
+                var loc1=null;
+                document.write("location is :"+loc1+"<br>");
+                document.write("the data type is : "+typeof(loc1)+"<br>");//object data type
+
+                var loc2;
+                document.write("location is :"+loc2+"<br>");//undefined
+                document.write("data type is :"+typeof(loc2)+"<br>");//undwfined
+    </script>                                                       
+</body>
+</html>

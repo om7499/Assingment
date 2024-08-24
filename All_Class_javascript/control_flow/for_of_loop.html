@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for_of loop</title>
+</head>
+<body>
+    <script>
+
+       // for -> of for [array , map , set , string] to iterate over values
+       // for -> in for an array to iterate over a key;
+       // for -> in for objects in ennumerate it (object's)propperties;
+     
+
+
+
+
+
+
+        // strings and array
+        //------------for-of loop-----------------------------
+        // Define => iterate over the values in an iterable object
+        //--This loop is help us to create loop on string and array
+        // it allows you to access the value of the object without having to use an index
+        let str = "apnacollage"
+        let size  = 0 ;
+        for(let i of str){
+            //iterators are print ->character
+            console.log("i : ",i);
+            size ++;
+        }
+        console.log(size);
+       //
+
+       //--------------fo-in loop--------------------array-give index
+       // define => it use to iterate over the enumerable propertiese of an object
+       //ii allows you to access the keys of the object
+
+       // for-in loop is print keyword(name,age,cgpa,ispass)
+    //    let student = {
+    //     name :' om behare',
+    //     age : 20,
+    //     cgpa : 9.45 ,
+    //     ispass : true,
+    
+    //    }
+    //    for(let i in student){
+    //     //console.log(i)// it is only print key
+    //     console.log("key = ",i ,"value = ",student[i])
+
+    //    }
+       //practice qe------------------------------------
+       let gamenum = 25;
+       let usernum = prompt("guess the game  number");
+
+       while(gamenum != usernum){
+        usernum  = prompt("You enterd wrong number ,enterd write number")
+       }
+       console.log("congratulation you enterd a right number")
+    </script>
+</body>
+</html>

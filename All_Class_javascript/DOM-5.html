@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM (Document object model)</h1>
+    <p class="fam ">getElementById</p>
+    <p class="fam ">getElementsByClassName</p>
+    <p id="demo">getElementByTagName</p>
+    <p class="Dev">querySelector</p>
+    <p class="Dev">querySelectorAll</p>
+
+    <ul>
+        <li class="items">mango</li>
+        <li class="items">mango</li>
+        <li class="items">mango</li>
+        <li class="items">mango</li>
+        <li class="items">mango</li>
+    </ul>
+    <script>
+        // getElementById is use for get the data into id
+        var val1 = document.getElementById("demo");
+        val1.style.color="white"
+        // console.log(val1)
+        
+        // getElementsByClassName is use for get the data into class
+        var val2 = document.getElementsByClassName("fam");
+        
+        val2[1].style.color="yellow"
+        val2[0].style.color="blue"
+        // console.log(val2);
+        
+        // getElementByTagName is is use for get the data inot tag
+        var val3 = document.getElementsByTagName("p");
+        val3[0].style.backgroundColor="yellow"
+        val3[0].style.padding="5px"
+        val3[1].style.backgroundColor="black"
+        val3[1].style.padding="5px"
+        val3[2].style.backgroundColor="black"
+        val3[2].style.padding="5px"
+        val3[3].style.backgroundColor="green"
+        val3[3].style.padding="5px"
+        val3[3].style.color="yellow"
+        val3[4].style.backgroundColor="red"
+        val3[4].style.padding="5px"
+        val3[4].style.color="pink"
+        // console.log(val3)
+        
+        //querySelector is use for get all type of data but only first element is give
+        var val4 = document.querySelector("#demo");
+        // console.log(val4)
+        
+        //querySelectorAll is use for get alltype of elements
+        var val5 = document.querySelectorAll(".fam");
+        // console.log(val5)
+          
+
+       var val6 = document.querySelectorAll("li")
+       console.log(val6.style)
+
+       for(let i=0;i<val6.length;i++){
+        val6[i].style.backgroundColor="yellow"
+        val6[i].style.border="2px solid green"
+        val6[i].style.listStyleType="none"
+        val6[i].style.margin="5px"
+        val6[i].style.backgroundImage=""
+        
+       }
+       val6[0].textContent="om"
+       //val6.textContent="om"
+       val6[0].style.color ="red"
+       val6[0].style.fontSize="25px"
+       val6[0].style.fontFamily=""
+       
+      
+
+    </script>
+</body>
+</html>
