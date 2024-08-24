@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendchiild element</title>
+</head>
+<body>
+      <ul id="menu">
+      </ul>
+
+
+      <p>first child move to the second ul</p>
+      <ul id="first">
+        <li>Everest</li>
+        <li>fuji</li>
+        <li>killer</li>
+      </ul>
+
+      <ul id="second">
+        <li>Range</li>
+        <li>denali</li>
+        <li>Blane</li>
+      </ul>
+
+
+    <script>
+        function createMenuitem(name){
+            let li = document.createElement("li")
+            li.textContent = name; //set the text content
+            return li;
+        }
+        const menu = document.getElementById("menu");
+
+        menu.appendChild(createMenuitem("hoome"));
+        menu.appendChild(createMenuitem("service"));
+        menu.appendChild(createMenuitem("About Us"));
+
+
+        // moving node within document
+        const first = document.querySelector("#first");
+        const change = first.firstElementChild;
+        const second = document.querySelector("#second");
+        second.appendChild(change)
+    </script>
+</body>
+</html>

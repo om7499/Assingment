@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick event</title>
+</head>
+<body>
+    <h1> HTML DOM onclick event  & ondblclick also same</h1>
+    <!-- ----Using Html------ -->
+    <!-- <button onclick="myfunction()">click me</button>
+    <p id="gif"></p> -->
+    
+    <!-- ------javascript--------------- -->
+     <p id="gig">click me</p>
+
+     <!-- --------using Add eventlistener--------------- -->
+     <p id="gfg">click me</p>
+    <script>
+        // 1)----using html-------------------------
+        // function myfunction(){
+        //     document.getElementById("gif").innerHTML = "GeeksForGeeks";
+        // }
+       
+
+        // 2)----Using javascript----------------------
+         document.getElementById("gig").onclick = function(){
+            GFGfun()
+         }
+         function GFGfun(){
+            document.getElementById("gig").innerHTML = "YOU clicked me";
+         }
+
+
+         // 3)-----using javascript addEventListner-------------------
+         document.getElementById("gfg").addEventListener("click",myfunction);
+
+         function myfunction(){
+            var mess = document.getElementById("gfg") ;
+            console.log(mess);
+            mess.innerHTML = "hello brother";
+            mess.style.background = "green";
+            mess.style.color = "white"
+            mess.style.padding = "5px"
+         }
+    </script>
+</body>
+</html>

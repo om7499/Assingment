@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email validation</title>
+    <style>
+        body{
+            height: 96vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+        input{
+            padding: 10px;
+            border-radius: 5px;
+        }
+        label{
+            font-size: 20px;
+           
+        }
+        span{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+   <div>
+     <h1>Check email is valid or not</h1>
+    <label for="">UserName</label>
+    <input type="email"onkeyup="validation()" id=
+             "email" placeholder="enter your email id">
+             <span id="check"></span>
+
+   </div>
+
+    <script>
+        function validation(){
+          var mail = document.getElementById("email").value;
+          var stylemail =document.getElementById("email")
+          var regExp = /^([A-Za-z0-9_.]{5,30}@[A-Za-z]{2,12}.[A-Za-z.]{2,8})\w+$/; //{789}{0-9} it is for number
+          var check = document.getElementById("check");
+          if(regExp.test(mail))
+          {
+            check.innerHTML = " Valid Email"
+            check.style.color = "green"
+            stylemail.style.outline = "2px solid green"
+            stylemail.style.border = "none"
+          }
+          else{
+            check.innerHTML = " Invalid Email"
+            check.style.color = "red"
+            stylemail.style.outline = "2px solid red"
+            stylemail.style.border ="none"
+          }
+        }
+    </script>
+</body>
+</html>

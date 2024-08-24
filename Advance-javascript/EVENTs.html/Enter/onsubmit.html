@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onsubmit</title>
+</head>
+<body>
+    <form action="" id="formid">
+        Enter name :
+        <input type="text"name="fname">
+        <input type="submit">
+    </form>
+
+    <script>
+        document.getElementById("formid").onsubmit = function(){
+            myfun()
+        }
+
+        function myfun(){
+            alert("form submitted")
+        }
+    </script>
+</body>
+</html>

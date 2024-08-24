@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>storage event</title>
+</head>
+<body>
+    <h1>HTML DOM storage Event</h1>
+    <br><br>
+    <button onclick="myfun()">click me!</button>
+    <p id="cont"></p>
+
+
+
+
+    <script>
+        window.addEventListener("storage",myfuntion)
+
+        function myfuntion(event){
+            document.getElementById("cont").innerHTML = "A computer science portal"
+            return  event ;
+        }
+
+        function myfun(){
+            var x = window.open("","win","width=100,height=100");
+            x.localStorage.setItem("mytime",Date.now());
+            x.close();
+            
+        }
+        myfun()
+    </script>
+</body>
+</html>

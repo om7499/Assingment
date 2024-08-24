@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string matching</title>
+</head>
+<body>
+    <script>
+        //How do you test if a string matches a regular expression pattern?
+        //----------Using match() Method-----------------
+        const str = 'hello world';
+        const result = str.match(/world/);
+        console.log(result);
+
+
+        //-------------Using test() Method---------------
+        const str1 = "hello world";
+        const regex = /world/;
+        console.log(regex.test(str));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ontoggle Event</title>
+</head>
+<body>
+    <h1>HTML DOM ontoggle Event</h1>
+    <details id="detailsId">
+      <summary>Show details</summary>
+     <pre>
+              5th Floor, A-118, 
+              Sector-136, Noida, Uttar Pradesh - 201305 
+              feedback@geeksforgeeks.org
+     </pre>
+    </details>
+
+
+    <script>
+        document.getElementByid("detailsId").addEventListener("toggle",myfun)
+        function myfun(){
+            alert("ontoggle");
+        }
+    </script>
+</body>
+</html>

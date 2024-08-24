@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom property</title>
+</head>
+<body>
+    <div id="main">
+   <p id="myid">This is first para</p>
+    <p class="para">This is second para</p>
+    <p class="para"> THi is third para</p>
+    <p class="para">This is forth para</p>
+    </div>
+    <h1 id="myhead">hello javascript</h1>
+
+    <script>
+
+        //--------------DOM manupulation Property-----------------
+        //tagName :-return tag for element nodes
+        //innerText :- returns the textcontent of the element and all is children
+        //innerHTML :- returns the plain text or HTML content in the element
+        //textContent :- return tectcontent even for hidden element
+       
+       
+       
+        let div = document.querySelector("h1");
+       console.log(div.innerText);
+//we are concatinate two element
+       div.innerText=div.innerText +"apana collage student";
+       console.log(div.innerText)
+       
+       
+    </script>
+</body>
+</html>

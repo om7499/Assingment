@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regEx validation</title>
+</head>
+<body>
+    <label for="">UserName</label>
+    <input type="text" onkeyup="validation()" placeholder=
+    "enter your name" id="user">
+
+
+    <script>
+        function validation(){
+            var username = document.getElementById("user").value;
+            var user = document.getElementById("user")
+            var regex = /^[A-Za-z _.@0-9]{6,30}$/;
+
+            if(regex.test(username)){
+                user.style.outline = "2px solid green";
+                user.style.border = "none"
+            }
+            else{
+                user.style.outline = "2px solid red";
+                user.style.border = "none"
+            }
+        }
+    </script>
+</body>
+</html>

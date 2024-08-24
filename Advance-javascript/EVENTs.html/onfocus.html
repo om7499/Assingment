@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onfocus Event</title>
+</head>
+<body>
+    <h1> HTML DOM onfocus Event</h1>
+    <p>onfocusin...onficusout....also the are same</p>
+    <br>
+    <!-- -----------us html-------------- -->
+     <input type="text"onfocus="myfun(this)"value="focus here"><br>
+
+     <!-- -------------using javascript----------------------- -->
+     <input type="text" id="myinput" value="focus here"><br>
+
+     <!-- -----------------using addEventListener------------------- -->
+     <input type="text" id="input" value="focus here">
+     <script>
+        function myfun(gfg){
+          gfg.style.background = "yellow"
+        }
+
+        //------using javascript-------------------------
+        document.getElementById("myinput").onfocus = function(){
+            newfun()
+        }
+        function newfun(){
+           document.getElementById("myinput").style.backgroundColor = "red" 
+        }
+
+        //---------Using addEventListener--------------------
+        document.getElementById("input").addEventListener("focus",myfun1)
+        function myfun1(){
+            document.getElementById("input").style.backgroundColor="blue"
+        }
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create_Element</title>
+</head>
+<body>
+    <script>
+        //create div element and store into variable
+        let div = document.createElement("div");
+        //give id for this element
+        div.id="content"
+        // enter some child into this
+        div.innerHTML = "<p>CreateElement Example</P>"
+        //add this element into body using appendchild    
+        document.body.appendChild(div);  
+        console.log(div)  
+    </script>
+</body>
+</html>

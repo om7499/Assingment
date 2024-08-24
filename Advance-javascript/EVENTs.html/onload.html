@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onload event</title>
+</head>
+<body>
+   <h1>HTML DOM onload Event</h1>
+   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20211113003851/geeks-300x83.png" alt=""
+        id="image">
+        <p id="pid"></p>
+        
+        <script>
+            document.getElementById("image").addEventListener("load",myfun);
+            function myfun(){
+                document.getElementById("pid").innerHTML = "image is loaded"
+            }
+        </script>
+</body>
+</html>

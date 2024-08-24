@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splice-method</title>
+</head>
+<body>
+    <script>
+        //----- splice(startidx,delCount,newEle)-----------------
+        let subject = ["math","marathi","hindi","english","science"]
+        //this method is use for access  the middel content of pices arr
+        console.log(subject);
+        // two el del and one add
+         var change = subject.splice(1,2,"biologi");//remove
+         // 0 el del and one el add
+          let change1 = subject.splice(2,0,"physics")// add
+         console.log(change);
+         console.log(subject)
+         console.log(change1)
+        
+    </script>
+</body>
+</html>

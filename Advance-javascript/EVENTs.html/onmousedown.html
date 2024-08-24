@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmousedown event</title>
+</head>
+<body>
+    <h1 ID="try">HTML DOM MOUSEDOWN EVENT</h1>
+
+    <script>
+        document.getElementById("try").addEventListener("mousedown",btnpress);
+        document.getElementById("try").addEventListener("mouseup",btnrelese);
+
+        function btnpress(){
+            document.getElementById("try").innerHTML = "buutton pressed"
+        }
+
+        function btnrelese(){
+            document.getElementById("try").innerHTML = "button relese"
+        }
+    </script>
+</body>
+</html>

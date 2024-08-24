@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oncut event</title>
+</head>
+<body>
+    <h1 style="color:blue">Hello javascript</h1>
+    <h2>HTML DOM ONCUT EVENT</h2>
+    <!-- ------DOM HTML-------------- -->
+    <input type="text"oncut="myfunction()"value="cut the text">
+    <p id="demo"></p>
+
+
+   <!-- ------------- DOM ON Javasript---------------- -->
+    <input type="text" id="myinput" value="cut the text">
+
+
+    <!-- -------------using add eventlistener--------------- -->
+    <input type="text" id="input" value="cut the text">
+
+    <script>
+        // =-----using dom with Html----------------
+        // we can press ctr + X print work done
+        function myfunction(){
+           var oncut= document.getElementById("demo");
+           console.log(oncut);
+           oncut.innerHTML ="work done";
+        }
+
+
+        //---------using javasript-----------------
+         document.getElementById("myinput").oncut = function(){
+            myfunction1()
+         }
+
+         function myfunction1(){
+           alert("work ok")
+         }
+
+        //  ---------using add addEventListener---------------------
+        var om = document.getElementById("input").addEventListener("cut",myfun);
+         console.log(om)
+        function myfun(){
+            alert("done the work")
+        }
+    </script>
+</body>
+</html>

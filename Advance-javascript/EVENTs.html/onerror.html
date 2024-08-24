@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onerror Event</title>
+</head>
+<body>
+<h1>HTML DOM onerror event</h1>
+<!-- <p>with html</p> -->
+<img src="nature.png" alt="image"onerror="myfun()">
+<br><br>
+<!-- <p>with javascript</p> -->
+<img src="natutr.png" alt="logo"id="logo">
+<p id="try"></p>
+
+
+<!-- <p>add eventlistener------</p> -->
+<img src="natutr.png" alt="logo"id="logo1">
+
+<script>
+    //  using Html------------------
+   function myfun(){
+        alert("error")
+        console.log("error1")
+    }
+
+    //---------------Using javascript---------------
+    document.getElementById("logo").onerror=function(){
+        myfuntion()
+    }
+    function  myfuntion(){
+      document.getElementById("try").innerHTML="error!!"
+      console.log("2error")
+    }
+
+    //---------------using addEventListener----------------------
+    document.getElementById("logo1").addEventListener("error",myeror)
+    function myeror(){
+        alert("Big-error");
+    }
+
+</script>
+</body>
+</html>

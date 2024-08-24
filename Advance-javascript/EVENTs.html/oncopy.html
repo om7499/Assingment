@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oncopy Event</title>
+</head>
+<body>
+    <h1>HTML DOM oncopy event</h1>
+    <!-- ----------using HTML--------------------- -->
+    <input type="text"oncopy="myfun()"value="copy the text" >
+    <p id="demo"></p>
+    
+
+    <!-- -------------Using javascript------------------------------- -->
+     <input type="text"id="input"value="copy the text"><br><br>
+
+    <!-- -------------Using addEventListner------------------------------- -->
+     <input type="text"id="myinput"value="copy the text">
+    <script>
+        //-----using Html-----------------------
+        function myfun(){
+            document.getElementById("demo").innerHTML = "Done"
+        }
+
+        //--------------using jvascript--------------------------
+        document.getElementById("input").oncopy = function(){
+            myfun1()
+        }
+        function myfun1(){
+            alert("done");
+            console.log("done")
+        }
+
+        //----------------using addEventListener------------------
+          document.getElementById("myinput").addEventListener("copy",mycopy);
+          function mycopy(){
+            alert("copyed")
+          }
+    </script>
+</body>
+</html>

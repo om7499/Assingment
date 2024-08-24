@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <h1>Prototype in js</h1>
+    <p>A java script object is in entity having state and behave (propertise and method)</p>
+    <p>js object have a special property clled prototype</p>
+    <p>we cwn set prototype using  __proto__ </p><!--also know as  --< Reference to one object -->
+
+    <script>
+        // class color{
+        //     constructor(r,g,b){
+        //       this.value = [r ,g ,b];
+        //     }
+        // }
+        // const red = new color(255,0,0);
+        // console.log(red)
+        
+    //     function createcolor(r,g,b){
+    //         return {
+    //           value :  [r,g,b]
+    //         }
+    //     }
+    //    console.log( createcolor(255,0,0))
+
+
+        constructor
+          class Color1{
+        constructor(r,g,b)
+        {
+            this.values = [r,g,b] 
+            this.getRed =function (){
+            return this.values[1];
+        };
+        }
+        
+        }
+         const red = new Color1(255,0,0);
+        console.log(new Color1().getRed === new Color1().getRed);
+        
+
+    
+;    </script>
+</body>
+</html>

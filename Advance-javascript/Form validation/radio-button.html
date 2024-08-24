@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio button validation</title>
+</head>
+<body>
+    <form action="#">
+        <input type="radio" name="gender"id="male" value="male">male
+        <input type="radio" name="gender"id="female"value="female">female
+        <button onclick="check()">Check</button>
+    </form>
+    <script>
+        function check(){
+            var rdb1 = document.getElementById("male");
+            var rdb2 = document.getElementById("female")
+
+            if(rdb1.checked==true){
+                alert(rdb1.value);
+            }
+            else if(rdb2.checked==true){
+                alert(rdb2.value)
+            }
+            else{
+                alert("plese check atlest one button")
+            }
+        }
+    </script>
+</body>
+</html>

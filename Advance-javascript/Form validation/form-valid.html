@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valided</title>
+    
+</head>
+<body>
+   <form onsubmit="return valid()" action="https://www.facebook.com/">
+      <input type="text"id="uname" placeholder="enter your name"><br>
+      <span id="check1" style="color: red;"></span><br>
+      <input type="text" name="" id="pass"placeholder="enter password"><br>
+      <span id="check" style="color: red;"></span><br>
+      <button type="submit"value="submit">submit</button>
+   </form>
+
+    <script>
+       function valid(){
+        var uname = document.getElementById("uname");
+        var pass = document.getElementById("pass");
+
+        if(uname.value == "")
+       {
+        var data0 = document.getElementById("check1");
+        data0.innerHTML ="please enter username "
+        uname.style.border ="2px solid red";
+        return false;
+       }
+        else if(pass.value == "")
+       {
+        var data1 = document.getElementById("check");
+        data1.innerHTML = "plese enter password";
+        pass.style.border ="2px solid red"
+        return false;
+       }
+       else if(pass.value.trim().length < 6){
+        var data = document.getElementById("check")
+        data.innerHTML = "plese enter password greter the 6 digit**";
+         pass.style.border ="2px solid red"
+        return false;
+       }
+       else{
+        return true;
+       }
+
+       }
+    </script>
+</body>
+</html>

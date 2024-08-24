@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>username and pass-validation</title>
+    <style>
+        body{
+            height: 96vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        input{
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button{
+            margin: 10px;
+            width: 100%;
+            padding: 8px;
+            color: white;
+            background-color: green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="text" placeholder="enter username"id="uname"><br>
+        <input type="password" placeholder="enter password" id="pass" ><br>
+        <button type="button" onclick="returnvalue()">submit</button>
+
+    </form>
+
+    <script>
+        function returnvalue(){
+            var uname = document.getElementById("uname").value;
+            var pass = document.getElementById("pass").value;
+            alert("user name is : "+uname);
+            alert("user name is : "+pass);
+        }
+    </script>
+</body>
+</html>

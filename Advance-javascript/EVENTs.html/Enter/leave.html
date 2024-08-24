@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse enter/leave</title>
+</head>
+<body>
+    <h1 id="demo">HTML DOM onmouseleave / MOUSEENTER Event</h1>
+
+    <script>
+        document.getElementById("demo").addEventListener("mouseenter",enter)
+        document.getElementById("demo").addEventListener("mouseleave" ,leave)
+
+        function enter(){
+          document.getElementById("demo").style.color = "yellow"
+        }
+
+        function leave(){
+            var bb =document.getElementById("demo").style.color = "blue"
+            console.log(bb)
+        }
+    </script>
+</body>
+</html>
