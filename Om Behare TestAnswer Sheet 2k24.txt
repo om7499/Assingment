@@ -1,0 +1,218 @@
+1. Write a function that converts a temperature in Celsius to Fahrenheit.
+
+
+
+2. Write a function that checks if a given number is positive, negative, or zero.
+
+function checknumber(num){
+     if(num === 0){
+     console.log("number is zero");
+     }
+     else if(num > 0){
+     console.log("number is positive");
+     }
+     else{
+     console.log("number is negative")
+     }
+}
+checknumber(7);
+
+Output : number is positive
+
+---------------------------------------------------------------------------
+
+
+3.Extract a portion of a string using the substring method. 
+
+function extractportion(str){
+     const result = str.slice(1,4);
+     return result;
+    }
+extractportion("ombehare");
+
+Output : mbe 
+
+----------------------------------------------------------------------
+
+4.Remove leading and trailing whitespaces from a string and find before and after 
+length of the given string
+
+function removeSpace(str){
+   const length = str.length;
+   const string = str.trim();
+   const string.length ;
+  
+  console.log(" the length is before :"+length);
+  console.log("after remove space :"string);
+  console.log(" after remove space length :" string);
+
+  }
+
+ removeSpace("   ombehare   ");
+
+output : the length is before : 14
+         after remove space : ombehare
+         after remove space length : 8
+
+-----------------------------------------------------------------------------------
+
+5.create a person object, Access and print the "name" and "age" properties of the 
+"person" object.
+
+ const persone = { name : "om",
+                   age : 22
+                  }
+ console.log(persone.name);
+ console.log(persone.age);
+
+Output : om
+         22
+
+---------------------------------------------------------------------------------
+
+6.Create an object with properties representing the days of the week. Write a loop 
+to iterate through these properties and print their values. 
+
+const day = { mon : 1,
+              Tue : 2,
+              wen : 3,
+              Tur : 4,
+              Fry : 5, 
+              Sat : 6,
+              Sun : 7
+           }
+ day.forEach( ( key,value) => {
+    reyurn `key is ${key} and value is ${value}`
+   })            
+  
+ Output : key is mon and value is 1
+          key is Tue and value is 2
+          key is wed and value is 3
+          key is Tur and value is 4
+          key is Fry and value is 5
+          key is Sat and value is 6
+          key is Sun and value is 7
+
+----------------------------------------------------------------------------------------
+7. How do you flatten a nested array in JavaScript? 
+
+   let arr = [1,2,3,[4,5,6],7,[4,7]]
+     function flat(){
+      const newarr = arr.flat() ;
+     }
+
+flat();
+
+output :[1,2,3,4,5,6,7,4,7]
+
+----------------------------------------------------------------------------------------
+ 
+8.How do you remove a specific element from an array? 
+
+let arr = [1,2,3,4,5]
+delete.arr[1];
+
+console.log(arr);
+
+Output : [1,3,4,5];
+
+----------------------------------------------------------------------------------------
+
+9. How do you check if an array contains a specific value?
+
+ let myarr = [1,2,3,4];
+ const result = myarr.hasOwnProperty(2);
+ console.log(result);
+
+Output : true;
+
+----------------------------------------------------------------------------------------
+
+
+10.Add a New Element 
+Create a new <p> element with the text "This is a new paragraph." and append it to 
+a <div> element with the id "container". 
+
+
+const div = getElementById("container")
+const myele = CreateElement("<p>");
+myele.innerText = "my name  is ome" ;
+
+div.appendChild(myele);
+
+console.log(div);
+
+output : <div id="container">
+            <p>my name  is ome</p> 
+         </div>
+    
+----------------------------------------------------------------------------------------
+
+11. Select by ID 
+Select the element with the ID "my Element" and change its text content to "I was 
+selected by ID." 
+
+const myid = getElementById("my_Element");
+
+myid.innerHtml = "I was selected by ID";
+
+console.log(myid);
+
+output : <div id="my_Element">I was selected by ID </div>
+
+----------------------------------------------------------------------------------------
+
+12.write js code age is greater than 16 and the owns Car variable is true, the if 
+block will run. The message printed to the console will be "sathya is old enough to 
+drive and has his own car." 
+
+      let age = 17;
+      if(age > 16){
+      const own_car = true ;
+      console.log("sathya is old enough to drive and has his own car." );
+
+      }
+     
+Output : sathya is old enough to drive and has his own car.
+
+-------------------------------------------------------------------------------------
+
+13.Make a "Good Night" greeting if the hour is greter than 21:00:
+
+   const date = new Date();
+   let hour = gethours()
+  if(hour > 21 : 00){
+     console.log("Good Night");
+    }
+   
+ Output : 
+ 
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
