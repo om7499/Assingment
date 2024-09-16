@@ -10,7 +10,7 @@ public class _09_Pattern {
 				System.out.print(" "+" ");
 			}
 			for(int c=a;c<=row;c++) {
-				System.out.print((char)(alpha + c-1));
+				System.out.print((char)(alpha + c-1)+" ");
 			}
 			System.out.println();
 		}
@@ -19,9 +19,9 @@ public class _09_Pattern {
 
 }
 /*output: 
-		          E
-		        DE
-		      CDE
-		    BCDE
-		  ABCDE
+		    E
+		  D E
+                C D E
+	      B C D E
+	    A B C D E
 */
